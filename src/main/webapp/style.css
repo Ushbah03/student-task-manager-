@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 600px;
+}
+h1 {
+    text-align: center;
+    color: #333;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+input, button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button {
+    background-color: #0056b3;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+button:hover {
+    background-color: #004494;
+}
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+li {
+    margin-bottom: 15px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+.status {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.status.pending {
+    background-color: #ffc107;
+    color: #000;
+}
+.status.completed {
+    background-color: #28a745;
+    color: #fff;
+}
+.toggle-btn {
+    margin-left: auto;
+    padding: 4px 8px;
+    font-size: 12px;
+    background-color: #6c757d;
+}
+.toggle-btn:hover {
+    background-color: #5a6268;
+}
+.error {
+    color: red;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.hidden {
+    display: none;
+}
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+    form {
+        flex-direction: column;
+    }
+    li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    .toggle-btn {
+        margin-left: 0;
+    }
+}
+
+/* Priority Label Styles */
+.priority {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    margin-left: 10px;
+}
+.priority.high { background: #c53030; }
+.priority.medium { background: #dd6b20; }
+.priority.low { background: #2f855a; }
